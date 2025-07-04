@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Study Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="text-center">JEE Study Resources</h1>
+            <p class="text-center">Free PDFs, Modules, and Doubt Solving</p>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Search Bar -->
+        <div class="row mb-4">
+            <div class="col-md-8 mx-auto">
+                <div class="input-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search books...">
+                    <button class="btn btn-primary" id="searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs for Subjects -->
+        <ul class="nav nav-tabs" id="subjectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="physics-tab" data-bs-toggle="tab" data-bs-target="#physics" type="button" role="tab">Physics</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chemistry-tab" data-bs-toggle="tab" data-bs-target="#chemistry" type="button" role="tab">Chemistry</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="maths-tab" data-bs-toggle="tab" data-bs-target="#maths" type="button" role="tab">Mathematics</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab">Doubt Solver</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content p-3 border border-top-0 rounded-bottom" id="subjectTabsContent">
+            <!-- Physics Tab -->
+            <div class="tab-pane fade show active" id="physics" role="tabpanel">
+                <h2>Physics Resources</h2>
+                <div class="row" id="physicsBooks">
+                    <!-- Physics books will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Chemistry Tab -->
+            <div class="tab-pane fade" id="chemistry" role="tabpanel">
+                <h2>Chemistry Resources</h2>
+                <div class="row" id="chemistryBooks">
+                    <!-- Chemistry books will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Maths Tab -->
+            <div class="tab-pane fade" id="maths" role="tabpanel">
+                <h2>Mathematics Resources</h2>
+                <div class="row" id="mathsBooks">
+                    <!-- Maths books will be loaded here -->
+                </div>
+            </div>
+
+            <!-- AI Doubt Solver Tab -->
+            <div class="tab-pane fade" id="ai" role="tabpanel">
+                <h2>Doubt Solving AI</h2>
+                <div class="ai-chat-container">
+                    <div id="chatMessages" class="chat-messages"></div>
+                    <div class="input-group mt-3">
+                        <input type="text" id="userInput" class="form-control" placeholder="Ask your doubt...">
+                        <button class="btn btn-primary" id="sendButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
+            <p>© 2023 JEE Study Resources. All materials are for educational purposes only.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
